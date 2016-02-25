@@ -22,7 +22,7 @@ public class SampleIterator {
             System.out.println(number);
         }
 
-        // internal iterators
+        // internal iterators1
         numbers.forEach(e -> System.out.println(e));
 
         numbers.forEach(System.out::println);

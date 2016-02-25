@@ -24,7 +24,10 @@ public class SampleStrategy {
 
         //high-order function, recive a function and return a function
         System.out.println(totalValues(numbers, e -> true));
-        System.out.println(totalValues(numbers, e -> e % 2 == 0));
+
+        System.out.println(totalValues(numbers, Util::isEven));
+        System.out.println(totalValues(numbers, e -> Util.isEven(e)));
+
         System.out.println(totalValues(numbers, e -> e % 2 != 0));
 
     }
@@ -74,4 +77,10 @@ public class SampleStrategy {
         return result;
     }
 
+}
+
+class Util {
+    public static boolean isEven(int n) {
+        return n % 2 == 0;
+    }
 }

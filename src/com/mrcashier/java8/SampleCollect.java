@@ -1,4 +1,4 @@
-package com.java8;
+package com.mrcashier.java8;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -15,7 +15,7 @@ public class SampleCollect {
 
         // 1. double the even values and punt into a list
 
-        List<Integer> doubleOfEven = new ArrayList();
+        List<Integer> doubleOfEven = new ArrayList<>();
 
         // wrong way to do this
         // ATTENTION mutability is OK, sharing is nuce, shared mutability is devils work. HAHA
@@ -81,7 +81,7 @@ public class SampleCollect {
 }
 
 enum Gender {
-    MALE, FEMALE;
+    MALE, FEMALE
 }
 class Person {
     String name;

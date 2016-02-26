@@ -18,6 +18,13 @@ public class SampleDecorator {
 
         doWork(10, inc);
         doWork(10, doubleIt);
+
+        // Increment and doubleit
+        int temp = inc.apply(5);
+        temp = doubleIt.apply(temp);
+        System.out.println(temp);
+
+        doWork(10, inc.andThen(doubleIt));
     }
 
     public static void doWork(int value, Function<Integer, Integer> func) {

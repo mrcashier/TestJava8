@@ -18,8 +18,6 @@ public class SampleExecuteAraoundMethod {
 
         Resource.use(Resource::op1);
 
-
-
     }
 }
 
